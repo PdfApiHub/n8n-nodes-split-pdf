@@ -11,7 +11,7 @@ export class SplitPdf implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Split PDF',
 		name: 'splitPdf',
-		icon: { light: 'file:../../icons/icon.svg', dark: 'file:../../icons/icon.svg' },
+		icon: { light: 'file:../../icons/light.svg', dark: 'file:../../icons/dark.svg' },
 		group: ['transform'],
 		version: 1,
 		description: 'Split a PDF into multiple files by page ranges or equal chunks using PDF API Hub',

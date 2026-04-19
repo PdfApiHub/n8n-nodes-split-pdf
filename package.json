@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-split-pdf",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Split a PDF into multiple files by page ranges or equal chunks using PDF API Hub",
 	"license": "MIT",
 	"homepage": "https://pdfapihub.com",
@@ -25,7 +25,7 @@
 		"dev": "n8n-node dev",
 		"lint": "n8n-node lint",
 		"lint:fix": "n8n-node lint --fix",
-		"prepublishOnly": "n8n-node prerelease"
+		"release": "n8n-node release"
 	},
 	"files": [
 		"dist"
@@ -44,7 +44,8 @@
 		"@n8n/node-cli": "*",
 		"@types/node": "^22.0.0",
 		"eslint": "9.32.0",
-		"typescript": "5.9.2"
+		"typescript": "5.9.2",
+		"release-it": "^19.0.4"
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
