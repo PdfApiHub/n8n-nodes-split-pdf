@@ -1,37 +1,50 @@
 # n8n-nodes-split-pdf
 
-> Split a PDF into multiple files by page ranges or equal chunks using PDF API Hub
+[![NPM Version](https://img.shields.io/npm/v/n8n-nodes-split-pdf.svg)](https://www.npmjs.com/package/n8n-nodes-split-pdf)
+[![License](https://img.shields.io/npm/l/n8n-nodes-split-pdf.svg)](LICENSE.md)
 
-This is an [n8n](https://n8n.io/) community node. It lets you use **[PDF API Hub](https://pdfapihub.com)** in your n8n workflows.
+> Split a PDF into individual pages, specific page ranges, or equal-sized chunks.
 
-## Prerequisites
+This is an [n8n](https://n8n.io/) community node powered by **[PDF API Hub](https://pdfapihub.com)**.
 
-- **n8n** v1.0.0 or later
-- A **PDF API Hub** API key — [get one free](https://pdfapihub.com)
+---
 
-## Installation
+## 🚀 Install
 
-1. Go to **Settings → Community Nodes**
-2. Select **Install a community node**
-3. Enter `n8n-nodes-split-pdf`
-4. Agree to the risks and click **Install**
+1. Go to **Settings → Community Nodes** in n8n
+2. Enter `n8n-nodes-split-pdf`
+3. Click **Install**
 
-## Operations
+## 🔑 Setup
 
-- **Split PDF** — Split a PDF into multiple files by page ranges or equal chunks using PDF API Hub
+1. Sign up at [pdfapihub.com](https://pdfapihub.com) (free tier available)
+2. Copy your API key
+3. In n8n → **Credentials → New → PDF API Hub API** → paste your key
 
-## Credentials
+---
 
-You need a PDF API Hub API key to use this node:
+## ✨ Features
 
-1. Sign up at [pdfapihub.com](https://pdfapihub.com)
-2. Copy your API key from the dashboard
-3. In n8n, create new **PDF API Hub API** credentials and paste your key
+| Parameter | Description |
+|-----------|-------------|
+| **Input Type** | URL or Binary file |
+| **Split Mode** | **Each** (one PDF per page), **Pages** (specific ranges like `1-3,5,8-10`), or **Chunks** (equal parts) |
+| **Chunks** | Number of equal parts (2–100) |
+| **Output Format** | URL, Base64, or Binary File (always returns a ZIP) |
+| **Output Filename** | Custom filename for the output ZIP |
 
-## Resources
+---
 
-- [PDF API Hub Documentation](https://pdfapihub.com/docs)
-- [n8n Community Nodes Documentation](https://docs.n8n.io/integrations/community-nodes/)
+## 💡 Use Cases
+
+- **Extract specific pages** — pull out just the pages you need
+- **Distribute chapters** — split a book into individual chapters
+- **Batch processing** — break large documents into manageable parts
+- **Archival** — split scanned documents by section
+
+## 📚 Resources
+
+- [PDF API Hub Docs](https://pdfapihub.com/docs)
 
 ## License
 
