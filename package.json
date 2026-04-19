@@ -1,0 +1,52 @@
+{
+	"name": "n8n-nodes-split-pdf",
+	"version": "1.0.0",
+	"description": "Split a PDF into multiple files by page ranges or equal chunks using PDF API Hub",
+	"license": "MIT",
+	"homepage": "https://pdfapihub.com",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"pdf",
+		"split-pdf",
+		"extract-pages",
+		"pdfapihub"
+	],
+	"author": {
+		"name": "Rishabh Dugar",
+		"email": "rishabh.dugar.com@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PdfApiHub/n8n-nodes-split-pdf.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/PdfapihubApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/SplitPdf/SplitPdf.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"@types/node": "^22.0.0",
+		"eslint": "9.32.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
